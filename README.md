@@ -187,6 +187,10 @@ CONTENT_FETCHER_SCRIPT=/path/to/content-fetcher/scripts/fetch_content.sh
 
 ---
 
+<img width="706" height="904" alt="image" src="https://github.com/user-attachments/assets/1fae2a2b-2ddd-4d41-ac3f-638104541312" />
+
+<img width="1280" height="501" alt="image" src="https://github.com/user-attachments/assets/adec7ec7-2fce-4293-ba6f-c4f12cdc3904" />
+
 ## Full Workflow Example
 
 ```bash
