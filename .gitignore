@@ -1,0 +1,19 @@
+# Environment variables — never commit these
+.env
+.env.*
+!.env.example
+
+# Node dependencies
+node_modules/
+*/node_modules/
+
+# Logs
+*.log
+scheduler.log
+
+# Queue data (contains your tweet history — optional to exclude)
+queue.json
+
+# OS files
+.DS_Store
+Thumbs.db
