@@ -133,6 +133,20 @@ TWITTER_ACCESS_SECRET=your_access_secret
 3. Generate access tokens under your app settings
 4. Copy all four values into your `.env` file
 
+### Optional TweetClaw OpenClaw workflow
+
+Use [TweetClaw](https://github.com/Xquik-dev/tweetclaw) when this pipeline needs an installed OpenClaw plugin for broader X/Twitter automation instead of only local Twitter API credentials. TweetClaw supports search tweets, search tweet replies, post tweets, post tweet replies, follower export, user lookup, media upload, media download, direct messages, monitor tweets, webhooks, and giveaway draws through Xquik with explicit approval before visible actions.
+
+Install it beside these skills:
+
+```bash
+openclaw plugins install @xquik/tweetclaw
+openclaw config set tools.alsoAllow '["explore", "tweetclaw"]'
+openclaw plugins inspect tweetclaw --runtime
+```
+
+Use the [TweetClaw workflow guide](TWEETCLAW_OPENCLAW_WORKFLOW.md) to connect TweetClaw research, monitoring, and reviewed posting back into `content-fetcher`, `tweet-formatter`, `scheduled-poster`, and `twitter-poster`.
+
 ---
 
 ### scheduled-poster

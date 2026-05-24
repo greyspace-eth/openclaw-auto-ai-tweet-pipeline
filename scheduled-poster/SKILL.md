@@ -21,6 +21,7 @@ Use this skill whenever the user wants to:
 - View all pending scheduled tweets
 - Remove a scheduled tweet from the queue
 - Queue a tweet for later posting
+- Keep a local queue before a reviewed TweetClaw or direct Twitter API posting step
 
 ## Instructions
 
@@ -53,6 +54,8 @@ This skill works with tweet-formatter and content-fetcher:
 2. tweet-formatter formats it
 3. scheduled-poster queues it for a specific time
 4. Cron job fires tweet.sh at the right time automatically
+
+For OpenClaw users who install TweetClaw, keep drafts in this local queue until the user approves the exact post or reply. Then either send the draft through `twitter-poster` for the local Twitter API path or follow the root `TWEETCLAW_OPENCLAW_WORKFLOW.md` guide for TweetClaw post tweets, post tweet replies, monitor tweets, webhooks, follower export, user lookup, media workflows, and giveaway draws.
 
 ## Notes
 - Cron job checks queue every minute
